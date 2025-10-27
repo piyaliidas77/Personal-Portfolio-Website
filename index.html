@@ -43,7 +43,7 @@
             <!-- FIX: All the text content MUST be wrapped inside this div -->
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Hello! I'm Piyali, a dedicated Software Engineer. I have knowledge about DSA, C, C++, Python, Java, HTML, CSS, JS, SQl, DBMS. I have made many projects on data analysis using Python, and this library. </p>
+                <p>Hello! I'm Piyali, a dedicated Software Engineer. I have knowledge about DSA, C, C++, Python, Java, HTML, CSS, JS, SQL, DBMS. I have made many projects on data analysis using Python, and this library and also i have made a E-commerce Website. </p>
                 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
@@ -60,10 +60,7 @@
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <!-- <li><span>2022 - Present</span><br>UI/UX Design Training at ET Institute</li> -->
                         <li><span>2024 - 2025</span><br>Internship - Works with team as a backend devolper and data analyst</li>
-                        <!-- <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
-                        <li><span>2016 - 2017</span><br>Internship at ekart ecommerce.</li> -->
                     </ul>
                 </div>
                 
@@ -165,7 +162,7 @@
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg">Fill this</span>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -217,7 +214,7 @@
       .then(response =>{
         msg.innerHTMl ="Message sent successfully"
         setTimeout(function(){
-            msg.innerHTML=" "
+            msg.innerHTML=""
         },5000)
         form.reset()
       })
